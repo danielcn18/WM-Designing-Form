@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      New Perspectives on HTML5 and CSS3, 7th Edition
+      Tutorial 7
+      Tutorial Case
+
+      Red Ball Pizza Survey Form
+      Author: Daniel Chiquete 
+      Date: 4/17/23
+
+      Filename: rb_survey.html
+
+   -->
+   
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Red Ball Survey</title>
+   <link href="rb_reset.css" rel="stylesheet" />
+   <link href="rb_styles.css" rel="stylesheet" />
+
+</head>
+<body>
+   <header>
+      <img src="rb_logo.png" alt="Red Ball Pizza" id="logoimg" />
+      <nav> <a id="navicon" href="#"><img src="rb_navicon.png" alt="" /></a>
+         <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">directions</a></li>
+            <li><a href="#">coupons</a></li>
+            <li><a href="#">orders</a></li>
+            <li><a href="#">catering</a></li>
+            <li><a href="#">reviews</a></li>
+         </ul>
+      </nav>
+   </header>
+   <section>
+      <h1>Customer Survey</h1>
+      <p>Thank you for taking our customer survey. Your response 
+         helps Red Ball Pizza maintain the tradition that has made 
+         us the top-rated pizzeria in the metro area.
+         All participants are automatically entered into a monthly
+         drawing to receive a <em>Red Ball Express PizzaFest</em> containing 
+         two large pizzas, a 2-liter soda, and a side 
+         order of chicken wings. Check your e-mail inbox for 
+         contest results. </p>
+      <p>Surveys are private and confidential. Red Ball 
+         Pizza will not share your contact information with third 
+         parties, <em>ever</em>. </p>
+      <p>Required values are marked by an asterisk (*)</p>
+
+      <form id="survey">
+         <fieldset>
+            <legend>
+               <p>Customer Information</p>
+            </legend>   
+            <label for="name">Name*</label>
+            <input id="name" type="text" name="name" placeholder="first and last name">
+            <label for="address">Street Address</label>
+            <input id="address" type="text" name="streetAddress">
+            <label for="city">City</label>
+            <input id="city" type="text" name="city" value="Ormond Beach">
+            <label for="state">State</label>
+            <input id="state" type="text" name="state" value="FL">
+            <lable for="postal">Postal Code</lable>
+            <input id="postal" type="text" name="postal" placeholder="nnnnn (-nnnn)">
+            <label for="info">Where did you hear about us?</label>
+            <select id="info" name="infoSrc" size="5" multiple>
+               <option value="internet">Internet</option>
+               <option value="magizine">Magizine</option>
+               <option value="newspaper">Newspaper</option>
+               <option value="word">Word of Mouth</option>
+               <option value="other">Other</option>
+            </select>
+            <div class="sync">
+               <input id="mailList" type="checkbox">
+               <label for="mailList">Add me to your mailing list.</label>
+            </div>
+         </fieldset>
+         <fieldset>
+            <legend>
+               <p>Share Your Experience at Red Ball Pizaa</p>
+            </legend>
+            <label for="date-visit">Date of visit</label>
+            <input id="date-visit" type="date">
+            <label for="order-type">Order Type</label>
+            <select name="orderType" id="order-type">
+               <option value="order1">Carry Out</option>
+               <option value="order2">Delivery</option>
+               <option value="order3" selected>Dine in</option>
+               <option value="order4">Take 'n Bake</option>
+            </select>
+            <label for="service">Was you service friendly?</label>
+            <div class="box">
+               <label for="hYes">Yes</label>
+               <input type="radio" id="hYes" name="serve-friendly" value="yes">
+               <label for="hNo">No</label>
+               <input id="hNo" type="radio" name="serve-friendly" value="no">
+            </div>
+            <label class="sync" for="exp">Tell us more about your experience!</label>
+            <textarea class="sync" id="exp" name="custExp" rows="8.6"></textarea>
+         </fieldset>
+      </form>
+
+     
+   </section>
+   <footer>
+      <h1>ORDER</h1>
+      <a href="#">Specials</a> <a href="#">Pizza</a> <a href="#">Pasta</a> <a href="#">Wings</a> <a href="#">Sides</a> <a href="#">Salads</a> <a href="#">Drinks</a> <a href="#">Desserts</a>
+      <h1>ABOUT US</h1>
+      <a href="#">Our Story</a> <a href="#">Blog</a> <a href="#">Catering</a> <a href="#">School Lunches</a>
+      <h1>CUSTOMER SERVICE</h1>
+      <a href="#">Gluten Free Crusts</a> <a href="#">Contact Us</a> <a href="#">FAQs</a>
+      <h1>MY ACCOUNT</h1>
+      <a href="#">Create an Account</a> <a href="#">Sign In</a> <a href="#">Order Status</a>
+      <h1>NUTRITION</h1>
+      <a href="#">Nutrition Information</a> <a href="#">Food Allergen</a> <a href="#">Gluten Free Pizza</a>
+      <h1>POLICIES</h1>
+      <a href="#">Privacy Policy</a> <a href="#">Terms of Use</a>
+      <address>
+         Red Ball Pizza <br />
+         811 Beach Drive <br />
+         Ormond Beach, FL  32175 <br />
+         (386) 555 - 7499
+      </address>
+   </footer>
+</body>
+</html>
